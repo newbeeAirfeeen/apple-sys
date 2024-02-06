@@ -62,6 +62,7 @@ impl Builder {
         ]);
 
         builder = builder
+            .derive_debug(true)
             .clang_args(&clang_args)
             .layout_tests(self.config.layout_tests)
             .rustfmt_bindings(true);
